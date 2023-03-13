@@ -1,0 +1,37 @@
+﻿<Window x:Class="SayangHG.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SayangHG"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="MainWindow" Height="700" Width="1200">
+    <Grid>
+        <Image Margin="0,0,-6.4,-30" Source="/SayangHG;component/Resources/главная.jpg" Stretch="Fill">
+            <Image.Effect>
+                <BlurEffect/>
+            </Image.Effect>
+        </Image>
+        <Rectangle Fill="Black" Stroke="Black" Margin="0,0,-6.4,-29.6" Opacity="0.7" Height="700" VerticalAlignment="Top"/>
+        <Label Foreground="White" Content="Sayang Hotel Group" Margin="451,56,435.6,558.4" FontSize="30" FontFamily="Baskerville Old Face" RenderTransformOrigin="0.469,-0.171"/>
+        <Label Content="Добро пожаловать!" Foreground="White" Margin="134,117,133.6,487.4" FontFamily="MS PGothic" FontSize="58" FontWeight="Bold" Height="66" HorizontalContentAlignment="Stretch"/>
+        <Label Content="Пожалуйста, выберите город:" Foreground="White" Margin="332,216,355.6,426.4" FontFamily="MS PGothic" FontSize="20" Height="28" HorizontalContentAlignment="Stretch"/>
+        <Rectangle Fill="Black" Margin="285,297,296.6,84.4" Stroke="Black" Opacity="0.8"/>
+        <TextBlock Margin="520,345,553.6,-0.6" Width="120">
+            <Hyperlink Click="hyperlink_Click_Moscow" Foreground="White" FontFamily="MS Gothic" FontSize="20">Москва </Hyperlink>
+        </TextBlock>
+        <TextBlock Margin="434,403,452.6,234.4" Width="307" Height="33">
+            <Hyperlink Click="hyperlink_Click_Spb" Foreground="White" FontFamily="MS Gothic" FontSize="20">Санкт-Петербург </Hyperlink>
+        </TextBlock>
+        <TextBlock Margin="520,463,553.6,174.4" Height="33">
+            <Hyperlink Click="hyperlink_Click_Kazan" Foreground="White" FontFamily="MS Gothic" FontSize="20">Казань </Hyperlink>
+        </TextBlock>
+        <TextBlock Margin="546,528,553.6,106.4">
+            <Hyperlink Click="hyperlink_Click_Sohci" Foreground="White" FontFamily="MS Gothic" FontSize="20">Сочи </Hyperlink>
+        </TextBlock>
+        <Button Content="Я сотрудник" Click="BtnClickSotr" Background="Black"  Margin="482,607,513.6,33.4" Width="198" Height="Auto" Opacity="0.75" FontFamily="MS Gothic" FontStyle="Italic"/>
+
+
+    </Grid>
+</Window>

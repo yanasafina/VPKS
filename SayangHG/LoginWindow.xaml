@@ -1,0 +1,35 @@
+﻿<Window x:Class="SayangHG.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SayangHG"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="LoginWindow" Height="700" Width="1200">
+    <Grid>
+        <Image Margin="0,0,-6.4,-30" Source="/SayangHG;component/Resources/главная.jpg" Stretch="Fill">
+            <Image.Effect>
+                <BlurEffect/>
+            </Image.Effect>
+        </Image>
+        <Rectangle Fill="Black" Stroke="Black" Margin="0,0,-6.4,-29.6" Opacity="0.7" Height="700" VerticalAlignment="Top"/>
+        <Label Foreground="White" Content="Sayang Hotel Group" Margin="451,56,435.6,558.4" FontSize="30" FontFamily="Baskerville Old Face" RenderTransformOrigin="0.469,-0.171"/>
+        <Label Content="Авторизация" Foreground="White" Margin="284,117,133.6,487.4" FontFamily="MS PGothic" FontSize="58" FontWeight="Bold" Height="66" HorizontalContentAlignment="Stretch"/>
+        <Rectangle Fill="Black" Margin="285,297,296.6,84.4" Stroke="Black" Opacity="0.8"/>
+        <TextBlock Margin="520,345,553.6,-0.6" Width="120">
+            <Label Foreground="White" FontSize="30" FontFamily="Baskerville Old Face"> Логин</Label>
+        </TextBlock>
+        <TextBlock Margin="434,403,452.6,234.4" Width="307" Height="33">
+            <TextBox x:Name="Log" Width="200" Background="DarkGray" Margin="40, 0, 0, 0" Foreground="White" FontSize="20" FontFamily="Baskerville Old Face" Height="33"></TextBox>
+        </TextBlock>
+        <TextBlock Margin="520,445,486.6,-0.6">
+            <Label Foreground="White" FontSize="30" FontFamily="Baskerville Old Face"> Пароль</Label>
+        </TextBlock>
+        <TextBox x:Name="Pas" Width="200" Background="DarkGray" Margin="472,495,521.6,140.4" Foreground="White" FontSize="20" FontFamily="Baskerville Old Face"/>
+        <Button Content="Войти" Click="BtnClickSotr" Background="Black"  Margin="482,607,513.6,33.4" Width="198" Height="Auto" Opacity="0.75" FontFamily="MS Gothic" FontStyle="Italic"/>
+        <Button Content="Вернуться" HorizontalAlignment="Left" Margin="39,34,0,0" VerticalAlignment="Top" Width="111" Click="Button_Click"/>
+
+
+    </Grid>
+</Window>
